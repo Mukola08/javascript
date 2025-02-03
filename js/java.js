@@ -18,4 +18,20 @@ console.log(numbers);
 const myNull = null
 console.log(typeof (myNull));
 
+prompt("Введіть ім'я користувача")
+const a = alert("дякую");
+console.log(a);
+
+// confirm("Підтвердіть будь-ласка");
+// const a = alert("дякую");
+// console.log(a);
+
+// alert("підтвердіть будь-ласка")
+// const a = alert("Дякую")
+// console.log(a);
+
+
+
+
+
 
