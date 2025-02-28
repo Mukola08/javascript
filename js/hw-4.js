@@ -43,7 +43,7 @@
 const nume = prompt("Введіть ім'я");
 const gmail = prompt("Введіть електронну адресу");
 const password = prompt("Введіть пароль");
-if (nume.length >= 3 && gmail.includes("@") && password.length >= 6) {
+if (nume.length >= 3 && gmail.includes("@")  &&  gmail.includes(".")  && password.length >= 6) {
     alert("Все вірно")
 } else {
     alert("Не вірні данні")
