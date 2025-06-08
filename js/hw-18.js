@@ -58,4 +58,18 @@ console.log(listElement);
 // Створи функції increment і decrement для збільшення і зменшення значення лічильника.
 // Додай слухачі кліків на кнопки, виклики функцій та оновлення інтерфейсу
 
-
+let counterValue = 0;
+function increment() {
+    counterValue += 1;
+    newEl();
+  }
+  function decrement() {
+    counterValue -= 1;
+    newEl();
+  }
+  function newEl() {
+    document.querySelector('#value').textContent = counterValue;
+} 
+document.querySelector('[data-action="increment"]').addEventListener("click", increment);
+document.querySelector('[data-action="decrement"]').addEventListener("click", decrement);
+g
