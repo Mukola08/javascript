@@ -6,8 +6,17 @@ document.querySelectorAll('input[name="color"]').forEach((input) => {
 })
 
 // 2.Напиши скрипт який, при наборі тексту в інпут input#name-input (подія input), підставляє його поточне значення в span#name-output. якщо інпут порожній, в спані повинен відображатися рядок 'незнайомець'.
-document.querySelector('input[type="text"]').addEventListener("input", (event) => {
-    document.querySelector("#name-output").textContent = event.target.value;
+
+const input = document.querySelector("#name-input");
+const output = document.querySelector("#name-output");
+
+input.addEventListener("input", () => {
+  const value = input.value.trim();
+  if (value === "") {
+    output.textContent = "незнайомець";
+  } else {
+    output.textContent = value;
+  }
 });
   
 // Напиши скрипт, який би при втраті фокуса на інпут, перевіряв його вміст на правильну кількість символів.
